@@ -1,11 +1,22 @@
 # HR-Attrition-Analysis-SQL-PowerBI
 
-# HR Attrition Analysis – IBM Dataset
-
 ## 🔎 Overview
 This project analyzes employee attrition patterns to uncover key factors influencing workforce turnover. Using **SQL for data auditing, analysis, and derived feature creation**, along with **Power BI for visualization**, the project transforms employee data into actionable insights for HR decision-making.
 
 The analysis identifies high-risk employee segments, investigates key attrition drivers, and provides **data-driven recommendations** to improve retention strategies.
+
+---
+
+## ❓ Key Business Questions  
+  
+- What is the overall attrition rate in the organization?    
+- Which departments and job roles experience the highest attrition?  
+- Which employee age groups or demographic segments show higher attrition risk?
+- How does salary (Monthly Income) influence employee attrition?  
+- Does overtime contribute to higher employee attrition?  
+- How does the promotion gap impact attrition?  
+- How do employee experience factors (job satisfaction, work-life balance, environment) influence attrition?    
+- Which employee segments are at the highest risk of attrition based on combined factors?
 
 ---
 
@@ -35,9 +46,9 @@ The analysis identifies high-risk employee segments, investigates key attrition 
 
 ### 3️⃣ Business Analysis (SQL)
 - Answered key business questions:  
-  - 🏢 Which Departments / Job Roles experience the highest attrition?  
-  - 💰 Does Salary, ⏱ Overtime, or 📉 Promotion Gap influence attrition?  
-  - ⚠️ Which Employee Segments are high-risk?  
+  -  Which Departments / Job Roles experience the highest attrition?  
+  -  Does Salary, ⏱ Overtime, or 📉 Promotion Gap influence attrition?  
+  -  Which Employee Segments are high-risk?  
 - Derived groups and **risk segments entirely within SQL queries**  
 - Queries are in `3_Business_Analysis_SQL/business_queries.sql`  
 
@@ -55,37 +66,59 @@ The analysis identifies high-risk employee segments, investigates key attrition 
 
 ---
 
-### 5️⃣ Insights & Recommendations
+## 📊 Key Insights  
 
-## The Macro View (Baseline Metric)
-* **Overall Attrition Rate: 16.12%**
+The Macro View  
+- Overall attrition rate is **16.12%**, serving as the baseline for identifying high-risk segments  
 
-Workforce Segmentation (The "Who")
-* **Generational Risk:** Attrition is highest among **Young Employees (18–30) at 25.91%**.
-* **The Onboarding Gap:** Early tenure (**0–2 years**) shows a peak exit rate of **29.82%**.
-* **Job Level Volatility:** **Entry-level (Level 1)** positions are the most unstable at **26.34%**.
-* 👉 **Insight:** The organization faces a "leaky bucket" problem with early-career talent, suggesting a gap in long-term value propositions for new hires.
+Who is Leaving?  
+- Highest attrition among **young employees (18–30): 25.91%**  
+- Early tenure (**0–2 years: 29.82%**) shows maximum exits  
+- **Entry-level (Job Level 1): 26.34%** most affected  
 
-Operational Hotspots (The "Where")
-* **Departmental Outliers:** Attrition is not uniform; it is concentrated in **Sales (39.76%)** and **Laboratory Technicians (23.94%)**.
-* **The Overtime Multiplier:** In a bivariate analysis, **Sales Representatives working Overtime** reached a critical attrition rate of **66.6%**. 
-* 👉 **Insight:** Operational pressure (Overtime) is the primary "trigger" that turns a high-pressure role into an unsustainable one.
+👉 Early-career employees are the most vulnerable segment  
 
-Diagnostic Drivers (The "Why")
-* **The Overtime Correlation:** Employees working Overtime are **3x more likely to exit** (30.53%) than their peers (10.44%).
-* **The Promotion–Salary Paradox:** Data reveals that employees in the **0–2 year promotion bracket** still exhibit high attrition. 
-    * **Root Cause:** Average salary for this group remains below retention thresholds. A title change without a competitive market adjustment is insufficient for retention.
-* **Career Stagnation:** Stagnation becomes a flight risk after **6+ years** without a promotion, regardless of previous loyalty.
-* **Sentiment Drivers:** Low **Work-Life Balance (31.25%)**, **Environment Satisfaction (25.35%)**, and **Job Satisfaction** scores serve as leading indicators for future turnover.
+Where is Attrition Highest?  
+- **Sales Representatives: 39.76%**  
+- **Laboratory Technicians: 23.94%**  
 
-The "Perfect Storm" (Key Finding)
-Through advanced SQL filtering and segment naming, I identified the most critical retention risk:
-* **High-Risk Profile:** Employees with **Low Income + Overtime + 6+ Year Promotion Gap**.
-* **Result:** **70% Attrition Rate.**
-* 👉 **Strategic Takeaway:** This segment represents a predictable failure point. Addressing even one factor (e.g., eliminating overtime for this group) could significantly lower the probability of exit.
+👉 Attrition is concentrated in specific roles, not organization-wide  
+
+Why are Employees Leaving?  
+
+- **Overtime impact:**  
+  30.53% (overtime) vs 10.44% (non-overtime)
+  
+  Work-Life Balance: Identified a 66.6% attrition trigger specifically among Sales representatives who frequently work Overtime.
+
+- **Low income effect:**  
+  ≤ 5,000 income group → 21.76% attrition  
+
+- **Promotion–salary paradox:**  
+  Early promotions (0–2 years) still show high attrition due to low salary  
+
+- **Career stagnation:**  
+  Long promotion gaps (6+ years) increase attrition  
+
+- **Employee experience impact:**  
+  Low job satisfaction, poor work-life balance (31.25%), and low environment satisfaction (25.35%) are strongly associated with higher attrition  
+
+High-Risk Segment (Key Finding)  
+
+- **Low Income + Overtime + No Promotion (6+ years)**  
+- 👉 **70% attrition rate**  
+
+👉 This segment represents the most critical retention risk  
 
 ---
 
+### 🧠 Final Insight  
+
+Attrition is driven by the **interaction of compensation, workload, career growth, and employee experience**, not individual factors.  
+
+👉 Multi-factor analysis is essential to identify and address high-risk employee segments  
+
+---
 ## 🧠 Strategic Synthesis & Recommendations
 Attrition is rarely driven by a single factor; it is the **compounding effect** of financial dissatisfaction and physical burnout. 
 
