@@ -7,6 +7,11 @@ The analysis identifies high-risk employee segments, investigates key attrition 
 
 ---
 
+## Business Problem Statement
+Employee attrition can significantly impact organizational productivity, increase recruitment costs, and disrupt team stability. Understanding the key factors driving employee turnover is critical for HR departments to design effective retention strategies.
+
+---
+
 ## ❓ Key Business Questions  
   
 - What is the overall attrition rate in the organization?    
