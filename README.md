@@ -135,7 +135,6 @@ Attrition is rarely driven by a single factor; it is the **compounding effect** 
 - 📈 Provide promotions and career growth opportunities  
 - ⏱ Monitor and manage overtime in high-risk departments  
 
-*Full insights are in `5_Insights_&_Recommendations/insights_recommendations.md`*
 
 ---
 
