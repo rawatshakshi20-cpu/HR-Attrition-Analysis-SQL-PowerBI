@@ -36,8 +36,6 @@ Employee attrition can significantly impact organizational productivity, increas
   - **Age Groups:** <30, 30–45, 45+  
   - **Attrition Risk Segments:** High, Moderate, Medium, Low (combining Income + Overtime + Promotion Gap)  
 
-*Audit queries and summaries are in `1_Data_Auditing_&_Validation/`*
-
 ---
 
 ### 2️⃣ Exploratory Data Analysis (EDA)
@@ -54,8 +52,7 @@ Employee attrition can significantly impact organizational productivity, increas
   -  Which Departments / Job Roles experience the highest attrition?  
   -  Does Salary, ⏱ Overtime, or 📉 Promotion Gap influence attrition?  
   -  Which Employee Segments are high-risk?  
-- Derived groups and **risk segments entirely within SQL queries**  
-- Queries are in `3_Business_Analysis_SQL/business_queries.sql`  
+- Derived groups and **risk segments entirely within SQL queries**    
 
 ---
 
@@ -65,9 +62,7 @@ Employee attrition can significantly impact organizational productivity, increas
   -  Attrition by Department, Job Role, and Demographics  
   -  Compensation vs Attrition trends  
   -  Overtime & Promotion Gap impact  
-  -  High-Risk Employee Segments  
-- Dashboard file: `4_PowerBI_Visualizations/dashboards.pbix`  
-- Screenshots for quick review: `4_PowerBI_Visualizations/visuals_screenshots/`  
+  -  High-Risk Employee Segments   
 
 ---
 
