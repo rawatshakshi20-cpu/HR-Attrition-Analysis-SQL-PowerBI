@@ -146,7 +146,4 @@ Attrition is rarely driven by a single factor; it is the **compounding effect** 
 
 ---
 
-## 🚀 How to Run
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/HR-Attrition-Analysis-IBM-Dataset.git
+
